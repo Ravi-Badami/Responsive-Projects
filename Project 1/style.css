@@ -186,6 +186,111 @@ html {
   padding: 1.3rem;
 }
 
+.contact {
+  background: #333;
+}
+.contact .row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5rem 0;
+}
+
+.contact .row .image img {
+  width: 50vw;
+  height: 70vh;
+}
+
+.contact .row .form-container {
+  width: 50%;
+  padding-right: 6rem;
+}
+
+.contact .row .form-container input,
+textarea {
+  height: 4rem;
+  width: 100%;
+  background: #fff;
+  border: none;
+  border-radius: 5rem;
+  padding: 0 1rem;
+  margin: 1rem 0;
+  color: var(--pink);
+  font-size: 1.7rem;
+  transition: 0.2s linear;
+}
+
+.contact .row .form-container textarea {
+  height: 20rem;
+  border-radius: 1rem;
+  padding: 1rem;
+  resize: none;
+}
+
+.contact .row .form-container button {
+  width: 17rem;
+  border: none;
+  height: 4rem;
+
+  color: white;
+
+  font-size: 1.7rem;
+  transition: 0.2s linear;
+  height: 4rem;
+  border-radius: 5rem;
+
+  background: var(--pink);
+
+  cursor: pointer;
+  font-size: 2rem;
+  transition: 0.2s;
+}
+.contact .row .form-container input[type="submit"] {
+  background: none;
+  /* color: white; */
+  /* color: var(--pink); */
+  border: 2rem solid var(--pink);
+}
+
+.footer {
+  text-align: center;
+}
+
+.footer .icons {
+  padding: 3rem 0;
+}
+
+.footer .icons a {
+  height: 4.5rem;
+  width: 4.5rem;
+  line-height: 4.2rem;
+  text-align: center;
+  border-radius: 50%;
+  color: var(--violet);
+  border: 2rem soild var(--violet);
+  font-size: 2rem;
+  transition: 0.2s linear;
+}
+
+.footer .icons a {
+  color: #fff;
+  background: var(--pink);
+  border-color: var(--pink);
+}
+
+.footer .credit {
+  font-size: 2rem;
+  border-top: 0.1rem solid#999;
+  margin: 0 auto;
+  margin-bottom: 2rem;
+  color: #666;
+  width: 90%;
+  padding: 1rem 0;
+}
+.footer .credit span {
+  color: var(--pink);
+}
+
 header {
   width: 96%;
   background: #fff;
@@ -455,5 +560,17 @@ header .fa-times {
   }
   .course .box-container {
     width: 100%;
+  }
+
+  .contact .row {
+    flex-flow: column;
+  }
+  .contact .row .image img {
+    height: 50vh;
+    width: 90vw;
+  }
+  .contact .row .form-container {
+    width: 90%;
+    padding: 0;
   }
 }
